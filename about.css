@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-size: cover;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.foodiesfeed.com%2F&psig=AOvVaw1TnRk5Zd4tjffV-eNlz1U9&ust=1723382383703000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMDir7_C6ocDFQAAAAAdAAAAABAJ");
+    background-position: center center;
+}
+
+header {
+    background: linear-gradient(to right, pink, green, blue);
+    /* Gradient background */
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffddc1;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Light background for better readability */
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+}
+
+.about-us {
+    background-size: cover;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-section h2 {
+    margin-top: 0;
+}
+
+.chef-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chef {
+    flex: 1;
+    min-width: 200px;
+    background: rgba(105, 180, 205, 0.9);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chef h3 {
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .chef-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
